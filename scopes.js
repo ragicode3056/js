@@ -52,12 +52,13 @@ function sum(){
     var b = 2;
     return a + b;
 }
+
 console.log(sum(),"lexical scoping");
 
 // Trying with block scope 
 let a1 = 43;
 function sum1(){
-    var b = 2; // local variable
+    let b = 2; // local variable
     return a1 + b;
 }
 console.log(sum1(),"lexical scoping");
@@ -72,6 +73,29 @@ console.log(globalFnScope(),"flobalfunction scope name");
 
 // Js closures 
 
+function print(){
+    let msg = "welcome";
+    function hello(){
+        return msg;
+    }
+    return hello();
+}
+console.log(print(),"calling closures");
 
+//Js closures in loops 
+const loops = () =>{
+    for(let i =0;i<3;i++){
+        let count = 0;
+        function increment(){
+            count ++;
+            function printIndex(){
+                console.log(count,i,"closures in loop");
+            }
+            printIndex();
+        }
+    }
+    return increment();
+}
 
+console.log(loops(),"llops in closures ");
 // Difference between closures and lexical scoping 
