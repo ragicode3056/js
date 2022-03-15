@@ -48,3 +48,35 @@ for(let i =0;i<3;i++){
     }
     console.log(i,"break");
 }
+
+// == and ===
+let val1 = 10;
+let val2 = "10";
+
+if(val1 == val2){
+    console.log("equals");
+}else{
+    console.log("not equal");
+}
+
+if(val1 === val2){
+    console.log("equals");
+}else{
+    console.log("not quals");
+}
+
+// ?? - Nullishing operator 
+
+// it takes - right hand operand by default 
+let s = "test" ?? "hello";
+console.log(s,"nullish left ");
+// it takes - left hand operand if right hand oprrand value is null or undefined 
+
+let z;
+let t = z ?? "hello nullish ";
+console.log(t,"nullish right");
+
+
+let f = null;
+let d = f ?? "left side";
+console.log(d,"nullish");
