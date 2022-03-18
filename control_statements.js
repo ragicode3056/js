@@ -80,3 +80,8 @@ console.log(t,"nullish right");
 let f = null;
 let d = f ?? "left side";
 console.log(d,"nullish");
+
+// Question
+if(0){
+    console.log("hello");
+}
