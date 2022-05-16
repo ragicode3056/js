@@ -73,3 +73,4 @@ console.log(Math.pow(2,3));
 
 console.log(3**4);
 
+const d = new Date();

@@ -134,38 +134,38 @@
 
   // spread operator 
 
-//let arr =  [1, 2, 3, 4, 5, 6];
-// let arr1 =  ['prabhu', 'tausif', 'rgini', 'shankar', 'vicky'];
- //console.log(...arr[3]);
-// console.log(...arr1);
+let arr =  [1, 2, 3, 4, 5, 6];
+let arr1 =  ['prabhu', 'tausif', 'rgini', 'shankar', 'vicky'];
+//  console.log(...arr[3]);
+console.log(...arr1,"spread");
 
 // rest operator
 
-// const [one, two, ...rest] = arr;
-// console.log(one);
-// console.log(two);
-// console.log(rest);
+const [one, two, ...rest] = arr;
+console.log(one);
+console.log(two);
+console.log(rest);
 
-// const { foo, bar, ...rest1 } = { foo: 1, bar: 2, a: 3, b: 4, c: 5 };
-// console.log(foo);
-// console.log(bar);
-// console.log(rest1);
+const { foo, bar, ...rest1 } = { foo: 1, bar: 2, a: 3, b: 4, c: 5 };
+console.log(foo);
+console.log(bar);
+console.log(rest1);
 
 
 // comma operator
-// for (var i = 0, j = 9; i <= j; i++, j--){
+for (var i = 0, j = 9; i <= j; i++, j--){
 
-// }
+}
 
 
 
-// let value1 = 2, value2 = 4, result = 0;
-// sum(value1, value2, result);
-// console.log(result);
+let value1 = 2, value2 = 4, result = 0;
+sum(value1, value2, result);
+console.log(result);
 
-// function sum(a, b, result) {
-//     result = a + b;
-// }
+function sum(a, b, result) {
+    result = a + b;
+}
 
 
 // scope

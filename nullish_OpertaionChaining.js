@@ -10,11 +10,11 @@
 // let a = undefined ?? 4;
 
 
-// let a = null ?? undefined;
+let a = null ?? undefined;
 
-let a = null ?? undefined ?? 3;
+//let a = null ?? undefined ?? 3;
 
-console.log(a);
+console.log(a,"hhh");
 
 // operation chaining 
 // ?.
