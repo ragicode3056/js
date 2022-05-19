@@ -9,12 +9,14 @@ let obj = {
     }
 }
 
-console.log(obj.namePriint());
+// console.log(obj.namePriint());
 
 // object copy 
 let obj2 = obj;
-console.log(obj2);
+// console.log(obj2);
 
 for(x in obj){
-    console.log(x.age);
+    console.log(obj[x]);
 }
+
+console.log(obj.name);
