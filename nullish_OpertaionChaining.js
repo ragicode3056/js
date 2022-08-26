@@ -2,8 +2,8 @@
 // nullish values - null and undefined 
 //  if 2 nulllish values are there then it will take values
 
-// let a  = 0 ?? 5;
-
+ let a1  = 0 ?? 5;
+console.log('a1',a1);
 
 // let a = null ?? 3;
 
